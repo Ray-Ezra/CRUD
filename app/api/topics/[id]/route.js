@@ -1,7 +1,6 @@
 import { NextResponse } from "next/server";
-import connectMongoDB from "../../../../lib/mongoDb";
-import Topic from "../../../../models/topic";
-import mongoose from "mongoose";
+import connectMongoDB from "@/lib/mongoDb";
+import Topic from "@/models/topic";
 
 export async function PUT(request, { params }){
     const {id} = params;
